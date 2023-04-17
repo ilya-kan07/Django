@@ -4,6 +4,9 @@
     </head>
     <body>
         <h1> My first blog </h1>
+        {% for post in posts %}
+            {{ post }}
+        {% endfor %}
         <h2> You are welcome </h2>
         <div>
             <p>Hi <em>there!</em> <br> I'm glad to see you here</p>
@@ -13,6 +16,15 @@
             <p>It <strong>works!</strong> You can follow me on my youtube channel <br> 
             For this link: <a href="https://www.youtube.com/">my channel</a></p>
         </div>
+
+    {% for post in posts %}
+        <div>
+            <h2> Some info about posts: </h2>
+            <p> published: {{post.published_date }} </p>
+            <h1> <a href=""> {{post.title}} </a> </h1>
+            <p> {{post.text | linebreaksbr }} </p>
+        </div>
+    {% endfor %}
     </body>
 </html>
 
