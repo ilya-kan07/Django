@@ -1,11 +1,16 @@
+h1 .title-link {
+    color: #044d91;
+    text-decoration: none;
+}
+
 h1 a {
-    color: #FCA205;
+    color: #044d91;
     font-family: 'Lobster';
 }
 
 
 .page-header {
-    background-color: #ff9400;
+    background-color: #2ac09b;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -17,6 +22,7 @@ h1 a {
 }
 
 .content {
+    margin-top: 20px;
     margin-left: 40px;
 }
 
@@ -26,6 +32,7 @@ h1, h2, h3, h4 {
 
 .date {
     color: #828282;
+    font-size: 14px;
 }
 
 .save {
@@ -34,6 +41,9 @@ h1, h2, h3, h4 {
 
 .post-form textarea, .post-form input {
     width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
